@@ -152,7 +152,7 @@ class FaceTracker:
     def __init__(
         self,
         proto_file: str = 'deploy.prototxt.txt',
-        model_file: str = 'res10_300x300_ssd_iter_140000.caffemodel',
+        model_file: str = 'res10_300x300_ssd_iter_140000_fp16.caffemodel',
         ) -> None:
         """
         Sets up the drone and face detection network
@@ -161,7 +161,7 @@ class FaceTracker:
             proto_file (str): Path to the model proto file.
             Default is 'deploy.prototxt.txt'
             model_file (str): Path to the model file.
-            Default is 'res10_300x300_ssd_iter_140000.caffemodel'
+            Default is 'res10_300x300_ssd_iter_140000_fp16.caffemodel'
         """
         self.tello = Tello()
 

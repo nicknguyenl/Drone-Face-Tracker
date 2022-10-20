@@ -7,7 +7,7 @@ from face_tracking import FaceTracker
 
 def main(
     proto_file: str = 'deploy.prototxt.txt',
-    model_file: str = 'res10_300x300_ssd_iter_140000.caffemodel',
+    model_file: str = 'res10_300x300_ssd_iter_140000_fp16.caffemodel',
     ) -> None:
     face_tracker = FaceTracker(
         proto_file=proto_file,
@@ -32,7 +32,7 @@ if __name__ == '__main__':
         '--model_file',
         type=str,
         help='Path to the model file',
-        default='res10_300x300_ssd_iter_140000.caffemodel',
+        default='res10_300x300_ssd_iter_140000_fp16.caffemodel',
         )
     
     args = parser.parse_args()

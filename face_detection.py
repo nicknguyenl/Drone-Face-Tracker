@@ -7,7 +7,7 @@ from numpy import array, squeeze
 
 def get_caffe_net(
     proto_file: str = 'deploy.prototxt.txt',
-    model_file: str = 'res10_300x300_ssd_iter_140000.caffemodel',
+    model_file: str = 'res10_300x300_ssd_iter_140000_fp16.caffemodel',
     ) -> dnn_Net:
     """
     Reads in a Caffe network with CV2 
@@ -16,7 +16,7 @@ def get_caffe_net(
         proto_file (str): Path to the model proto file.
         Default is 'deploy.prototxt.txt'
         model_file (str): Path to the model file.
-        Default is 'res10_300x300_ssd_iter_140000.caffemodel'
+        Default is 'res10_300x300_ssd_iter_140000_fp16.caffemodel'
     
     Returns (dnn_Net): A dnn_Net from the provided proto and model files
     """
