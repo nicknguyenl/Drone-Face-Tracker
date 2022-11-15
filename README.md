@@ -7,5 +7,7 @@ Installation Requirements:
 * djitellopy == 2.4.0
 
 How to Use:
-* Connect to DJI Tello Drone's Internet
-* Run command in terminal: 'python main.py --model_file res10_300x300_ssd_iter_140000_fp16.caffemodel --proto_file deploy.prototxt.txt'
+1. Connect to DJI Tello Drone's Internet
+2. Run command in terminal: 'python main.py --model_file res10_300x300_ssd_iter_140000_fp16.caffemodel --proto_file deploy.prototxt.txt'
+3. Drone will automatically launch and a video stream will be displayed in a separate window
+4. Get in the drone's camera view and it will then detect and track your face 
